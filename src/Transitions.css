@@ -1,0 +1,34 @@
+/* Transición por cuadros */
+.pixel-fade {
+  position: relative;
+  overflow: hidden;
+}
+
+.pixel-fade::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(#000 0% 5%, transparent 5% 10%);
+  background-size: 20px 20px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.pixel-fade.exit::before {
+  opacity: 1;
+  animation: pixelFade 0.5s steps(5) forwards;
+}
+
+/* Animación en cuadros tipo glitch */
+@keyframes pixelFade {
+  0% {
+    filter: brightness(1) blur(0px);
+    opacity: 0.5;
+  }
+  100% {
+    filter: brightness(0) blur(2px);
+    opacity: 1;
+  }
+}
