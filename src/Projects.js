@@ -3,6 +3,7 @@ import rick_morty from './assets/rick.jpg';
 import clima from './assets/Clima.jpg';
 import pokedex2 from './assets/pokedex2.jpeg';
 import frase from './assets/Frase.jpg';
+import fake from './assets/fake.jpg';
 
 const projects = [
   {
@@ -44,6 +45,14 @@ const projects = [
     description: 'Aplicación simple pero funcional que carga frases desde un archivo JSON estático y renderiza una frase distinta cada vez. Usa React puro, enfoque declarativo y aleatorización controlada desde el frontend sin necesidad de API externa.',
     demo: "https://phrases-of-the-day.netlify.app/",
     code: "https://github.com/Maycol1490/phrases-_of-_the_day"
+  },
+    {
+    id: 5,
+    title: "FakeStore E-Commerce Pro",
+    image: fake ,
+    description: 'E-commerce en React + Vite que consume la Fake Store API. Permite explorar productos, gestionarlos en un carrito con Redux, modificar datos de usuario, simular compras y guardar el historial en LocalStorage. Totalmente responsive y con diseño atractivo. Funciona utilizando el usuario de prueba: mor_2314 / 83r5^_.',
+    demo: "https://ecommersfake.netlify.app/",
+    code: "https://github.com/Maycol1490/Ecommers"
   },
 ];
 
